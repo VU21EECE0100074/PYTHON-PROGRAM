@@ -1,29 +1,13 @@
-# PYTHON-PROGRAM
-1.Write a program to read 10 numbers from a files.Write the even numbers and odd numbers to seperate files even.txt and odd.txt
-*Note: Before executing the code,create a even_odd.txt and enter a n numbers in it*
-
-file = open("even_odd.txt","rt") 
-for i in file: 
-    if i.strip: 
-        num = int(i) 
-        if (num % 2 == 0): 
-            even = open("even.txt","a") 
-            even.write(str(num)) 
-            even.write("\n") 
-        else: 
-            odd = open("odd.txt","a") 
-            odd.write(str(num)) 
-            odd.write("\n")
-             
-Output:
-      *Two new .txt files are created ie,even.txt and odd.txt*
-*even.txt:
-2
-4
-6
-8
-
-*odd.txt:
-1
-3
-5
+Open the even_odd.txt file in write mode 
+Write 1 to 10 numbers in even_odd.txt file.
+Close the file
+Open the even_odd.txt file in read mode.
+Read the contents of the file.
+Print the contents of the file.
+Open even.txt file 
+Open odd.txt file
+Loop through the even.txt file
+Check if the number is even or odd
+If the number is even,write it to even.txt file
+If the number is odd,write it to odd.txt file
+Close the file
